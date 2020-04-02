@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="480.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.GUI.MainController">
+   <children>
+      <Button fx:id="LogoutButton" layoutX="463.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="27.0" prefWidth="113.0" text="Logout" />
+      <VBox layoutX="14.0" layoutY="19.0" prefHeight="445.0" prefWidth="369.0">
+         <children>
+            <TableView fx:id="TabelCurse" prefHeight="199.0" prefWidth="371.0">
+              <columns>
+                <TableColumn fx:id="IdCol" prefWidth="104.0" text="idCursa" />
+                <TableColumn fx:id="CapCol" prefWidth="131.0" text="Capacitate" />
+                  <TableColumn fx:id="NrCol" prefWidth="133.0" text="Nr" />
+              </columns>
+            </TableView>
+            <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="41.0" prefWidth="369.0">
+               <children>
+                  <Button fx:id="clearsearch" mnemonicParsing="false" onAction="#handleclear" prefHeight="47.0" prefWidth="105.0" text="Clear Search" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+                  <TextField fx:id="TFSearch" prefHeight="42.0" prefWidth="161.0" />
+                  <Button fx:id="SearchByTeam" mnemonicParsing="false" onAction="#handlesearch" prefHeight="38.0" prefWidth="110.0" text="Search" />
+               </children>
+            </HBox>
+            <TableView fx:id="TabelPart" prefHeight="214.0" prefWidth="361.0">
+              <columns>
+                <TableColumn fx:id="IDPart" prefWidth="62.0" text="IdPart" />
+                <TableColumn fx:id="NumePart" prefWidth="165.0" text="Nume" />
+                  <TableColumn fx:id="CapacitatePart" prefWidth="140.0" text="Capacitate" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Button fx:id="InscButton" layoutX="462.0" layoutY="294.0" mnemonicParsing="false" onAction="#handlesubmit" prefHeight="35.0" prefWidth="113.0" text="Inscriere" />
+      <ComboBox fx:id="CapBox" layoutX="444.0" layoutY="240.0" prefWidth="150.0" promptText="Capacitate" />
+      <TextField fx:id="TFNumePart" layoutX="438.0" layoutY="135.0" promptText="Nume Participant" />
+      <TextField fx:id="TFNumeEchipa" layoutX="438.0" layoutY="179.0" promptText="Nume Echipa" />
+   </children>
+</AnchorPane>

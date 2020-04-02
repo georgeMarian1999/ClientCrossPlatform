@@ -1,0 +1,9 @@
+rootProject.name = 'ClientServerProb11'
+include 'Client'
+include 'ServerServices'
+include 'Server'
+include 'Model'
+include 'Persistance'
+include 'Networking'
+include 'AppClient'
+

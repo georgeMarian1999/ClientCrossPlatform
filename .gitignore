@@ -1,0 +1,15 @@
+# Project exclude paths
+/.gradle/
+/AppClient/build/
+/AppClient/build/classes/java/main/
+/build/
+/Model/build/
+/Model/build/classes/java/main/
+/Networking/build/
+/Networking/build/classes/java/main/
+/Persistance/build/
+/Persistance/build/classes/java/main/
+/Server/build/
+/Server/build/classes/java/main/
+/ServerServices/build/
+/ServerServices/build/classes/java/main/
