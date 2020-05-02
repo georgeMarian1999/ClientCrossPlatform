@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class StartClient extends Application {
-    private Stage primaryStage;
+
 
     private static int defaultChatPort = 55555;
     private static String defaultServer = "localhost";
@@ -47,6 +47,7 @@ public class StartClient extends Application {
 
 
 
+
         FXMLLoader loader = new FXMLLoader(
                 getClass().getClassLoader().getResource("LoginView.fxml"));
         Parent root=loader.load();
@@ -63,7 +64,7 @@ public class StartClient extends Application {
                 getClass().getClassLoader().getResource("MainView.fxml"));
         Parent croot=cloader.load();
 
-
+        //MainController mainCtrl=new MainController(server);
         MainController mainCtrl =
                 cloader.<MainController>getController();
         mainCtrl.setServer(server);

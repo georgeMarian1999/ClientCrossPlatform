@@ -23,6 +23,7 @@ dependencies {
     compile project (':Model')
     compile project (':ServerServices')
     compile project (':Networking')
+    compile 'org.springframework:spring-context:5.0.4.RELEASE'
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.2")
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.10.0'
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.10.0'

@@ -3,13 +3,11 @@ package Models;
 import java.io.Serializable;
 
 public class DTOInfoSubmit implements Serializable {
-    private DTOAngajat who;
     private int capacitate;
     private String NumePart;
     private String NumeEchipa;
 
-    public DTOInfoSubmit(DTOAngajat angajat,int capacitate1,String numeparticipant,String numeechipa) {
-        this.who=angajat;
+    public DTOInfoSubmit(int capacitate1,String numeparticipant,String numeechipa) {
         this.capacitate = capacitate1;
         this.NumePart = numeparticipant;
         this.NumeEchipa = numeechipa;
@@ -39,15 +37,6 @@ public class DTOInfoSubmit implements Serializable {
         NumeEchipa = numeEchipa;
     }
 
-    public DTOAngajat getWho() {
-        return who;
-    }
-    public String getUserWho(){
-        return this.who.getUsername();
-    }
-    public void setWho(DTOAngajat who) {
-        this.who = who;
-    }
 
     @Override
     public String toString() {

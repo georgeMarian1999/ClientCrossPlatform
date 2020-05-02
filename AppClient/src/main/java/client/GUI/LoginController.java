@@ -74,10 +74,10 @@ public class LoginController {
                 });
             stage.show();
             mainCtrl.setUser(crtAngajat);
-            //mainCtrl.setLoggedEmployess();
             mainCtrl.initialiazeTabels();
             mainCtrl.setCurseTabel();
             mainCtrl.setComboBox();
+            mainCtrl.setTeamBox();
             ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
 
         }catch(ServerException e){

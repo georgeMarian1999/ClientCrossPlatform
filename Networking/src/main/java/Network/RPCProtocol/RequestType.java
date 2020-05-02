@@ -1,5 +1,0 @@
-package Network.RPCProtocol;
-
-public enum RequestType {
-    LOGIN,LOGOUT,GET_LOGGED_EMPLOYEES,SUBMIT_INSC,SEARCH_BY_TEAM,GET_CURRENT_CURSE;
-}

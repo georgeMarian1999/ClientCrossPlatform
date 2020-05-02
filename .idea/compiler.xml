@@ -4,6 +4,10 @@
     <bytecodeTargetLevel>
       <module name="ClientServerProb11.Client.main" target="1.8" />
       <module name="ClientServerProb11.Client.test" target="1.8" />
+      <module name="ClientServerProb11.Persistance.main" target="1.8" />
+      <module name="ClientServerProb11.Persistance.test" target="1.8" />
+      <module name="ClientServerProb11.Server.main" target="1.8" />
+      <module name="ClientServerProb11.Server.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
